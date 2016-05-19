@@ -1,0 +1,194 @@
+body{
+  background-color:#E4F1FE;
+  width:1397px;
+  margin:auto;
+  padding:0;
+  animation-name:cont-ani;
+  animation-duration:1.3s;
+  animation-iteration-count:1;
+  animation-timing-function:linear;
+}
+
+.outerCube{
+  width:65px;
+  height:65px;
+  padding:0;
+  margin:0;
+  float:left;
+}
+
+/* Load page Animation (anpassa enligt MouseOut)*/
+@keyframes cont-ani{
+  0% {background-color:#22313F}
+  15% {background-color:#2C3E50;}
+  40% {background-color:#81CFE0;}
+  75% {background-color:#C5EFF7;}
+  100% {background-color:#E4F1FE;}
+}
+
+@-webkit-keyframes cont-ani{
+  0% {background-color:#22313F}
+  15% {background-color:#2C3E50;}
+  40% {background-color:#81CFE0;}
+  75% {background-color:#C5EFF7;}
+  100% {background-color:#E4F1FE;}
+}
+
+
+#container{
+  padding:15px;
+  /*text-align: center;*/
+}
+
+.mycube{
+  /* Sätt border-radius till 50% för Circle */
+  /*display:inline-block;*/
+  border-radius:0%;
+  float:left;
+  margin:0;
+  padding:0;
+  width:65px;
+  height:65px;
+
+  /* Jobbar på triangel */
+/*
+  border-left: 30px solid #E4F1FE;
+  border-right:30px solid #E4F1FE;
+  border-bottom:60px solid transparent;
+*/
+
+  background-color:#E4F1FE;
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration:1s;
+
+  -moz-transition-property:-moz-transform;
+  -moz-transition-duration:1s;
+
+  transition-property:transform;
+  transition-duration:1s;
+}
+
+/* On mouseover*/
+.mycube:hover{
+  -webkit-animation-name:rotate;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:linear;
+
+  -moz-animation-name:rotate;
+  -moz-animation-duration: 4s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-timing-function:linear;
+
+  animation-name:rotate;
+  animation-duration:4s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+  background-color:#2C3E50;
+}
+
+/* -webkit- MouseOver Animation */
+@-webkit-keyframes rotate{
+  from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}
+}
+
+/* MouseOver Animation */
+@keyframes rotate{
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}
+
+.rot_cube:not(:hover){
+    -webkit-animation-name:out2;
+    -webkit-animation-duration:1.3s;
+    -webkit-animation-iteration-count:1;
+    -webkit-animation-timing-function:linear;
+    animation-name:out2;
+    animation-duration:1.3s;
+    animation-iteration-count:1;
+    animation-timing-function:linear;
+}
+
+.size_cube:not(:hover){
+    -webkit-animation-name:out3;
+    -webkit-animation-duration:1.3s;
+    -webkit-animation-iteration-count:1;
+    -webkit-animation-timing-function:linear;
+    animation-name:out3;
+    animation-duration:1.3s;
+    animation-iteration-count:1;
+    animation-timing-function:linear;
+}
+
+/* On mouseOut */
+.mycube:not(:hover){
+  -webkit-animation-name:out;
+  -webkit-animation-duration:1.3s;
+  -webkit-animation-iteration-count:1;
+  -webkit-animation-timing-function:linear;
+  animation-name:out;
+  animation-duration:1.3s;
+  animation-iteration-count:1;
+  animation-timing-function:linear;
+}
+
+@-webkit-keyframes out3{
+    from{width:65px;}
+    to{width:15px;}
+    from{height:65px;}
+    to{height:15px;}
+}
+
+
+@-webkit-keyframes out2{
+    from {-webkit-transform:rotate(540deg);}
+    to{-webkit-transform:rotate(0deg);}
+}
+
+/* -webkit-MouseOut animation */
+@-webkit-keyframes out{
+/*
+  from {-webkit-transform: rotate(540deg);}
+  to {-webkit-transform: rotate(0deg);}
+  */
+  0% {background-color:#22313F;}
+  15% {background-color:#2C3E50;}
+  40% {background-color:#81CFE0;}
+  75% {background-color:#C5EFF7;}
+  100% {background-color:#E4F1FE;}
+
+  /*
+  from{-webkit-transform:scale(1,1);}
+  to{-webkit-transform:scale(0.15,0.15);}
+  */
+
+  /* -webkit- Jobbar på Roterande Kvadrater*/
+
+}
+
+/* MouseOut Animation */
+/*
+@keyframes out{
+  from {transform: rotate(540deg);}
+  to {transform: rotate(0deg);}
+  0% {background-color:#22313F}
+  15% {background-color:#2C3E50;}
+  40% {background-color:#81CFE0;}
+  75% {background-color:#C5EFF7;}
+  100% {background-color:#E4F1FE;}
+*/
+
+/*
+  from{transform:scale(1,1);}
+  to{transform:scale(0.2,0.2);}
+*/
+
+   /*Jobbar på roterande kvadrater*/
+  /*
+  0%{width:65px;}
+  100%{width:15px;}
+  0%{height:65px;}
+  100%{height:15px;}
+  */
+}
