@@ -72,63 +72,6 @@ function generateDivs() {
             count++
         }
     }
-
-    //const largestValue = Math.floor(width / S) * Math.floor(height / S) >= n
-
-    /*const ration = 20
-    const container = document.getElementById('container')
-    
-    
-
-    console.log(1000, container)
-    console.log(1000, width, height)
-    const cubesize = width / ration
-    const cubeArea = cubesize * cubesize
-
-    const containerArea = width * height
-    const cubeCount = containerArea / cubeArea
-    */
-    //const containerMargins = windowArea % cubeArea
-    //const columns = windowWidth / cubesize
-    //const rows = windowHight / cubesize
-    //const cubesize = windowWidth / 10
-
-    //const columns = windowWidth / cubesize
-    //const rows = windowHight / cubesize
-
-    //const cubeCount = columns * rows
-    //const horisontalMargins = windowWidth % cubesize
-    //const verticalMargins = windowHight % cubesize
-
-    //console.log(`containerMargins: ${containerMargins}`)
-    //console.log(`cubeCount: ${cubeCount}`)
-
-    //const container = document.getElementById("container")
-    //container.style.margin=`${containerMargins}px`
-    //container.style.marginLeft = horisontalMargins
-    //container.style.marginRight = horisontalMargins
-    //container.style.marginTop = verticalMargins
-    //container.style.marginTop = verticalMargins
-    //let countOfRows = 0
-    //let totalHeight = 0
-   // while(totalHeight < windowHight){
-    //    countOfRows += 1
-    //    totalHeight += cubesize
-    //}
-    /*
-    for (let i = 0; i < cubeCount; i++){
-            const outerCube = document.createElement("div")
-            const mycube = document.createElement("div")
-            outerCube.classList.add("outerCube")
-            outerCube.style.width = `${cubesize}px`
-            outerCube.style.height = `${cubesize}px`
-            mycube.classList.add("mycube")
-            mycube.style.width = `${cubesize}px`
-            mycube.style.height = `${cubesize}px`
-            outerCube.appendChild(mycube)
-            container.appendChild(outerCube)
-    }
-    */
 }
 
 document.body.onload = generateDivs();
